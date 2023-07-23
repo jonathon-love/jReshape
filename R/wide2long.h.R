@@ -195,8 +195,14 @@ wide2longResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 name="showdata",
                 title="Data Preview",
                 clearWith=list(
-                    "create",
-                    "button"),
+                    "mode",
+                    "sim_colstorows",
+                    "sim_covs",
+                    "sim_index",
+                    "sim_dep",
+                    "comp_colstorows",
+                    "comp_index",
+                    "comp_covs"),
                 columns=list(
                     list(
                         `name`="row", 
